@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(rgb(55, 55, 248), rgb(81, 81, 254));
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.login-box .user-box{
+    position: relative;
+
+}
+
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label{
+    top: -20px;
+    left: 0;
+    color: silver;
+    font-size: 12px;
+}
+
+#btn{
+    width: 100%;
+    padding: 10px;
+    background: rgb(55, 55, 248);
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.login-box .user-box span{
+    position: absolute;
+    color: red;
+    top: 65%;
+    left: 0;
+    font-size: 12px;
+}
+
+.login-box .user-box input.err{
+    border-bottom: 1px solid red;
+}
+.login-box .user-box input.valid{
+    border-bottom: 1px solid green;
+}
+
